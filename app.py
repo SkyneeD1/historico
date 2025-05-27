@@ -6,7 +6,7 @@ import pandas as pd
 import os
 import re
 
-st.set_page_config(page_title="Extrator de Histórico Salarial", layout="wide")
+st.set_page_config(page_title="Histórico Salarial", layout="wide")
 st.title("📑 Extrator de Histórico Salarial - Daniel Tominaga")
 
 uploaded_file = st.file_uploader("📤 Envie o PDF do processo", type=["pdf"])
