@@ -1,0 +1,7 @@
+streamlit>=1.33.0
+pymupdf>=1.23.0
+camelot-py[cv]>=0.11.0
+pandas>=2.0.0
+opencv-python>=4.5.5
+ghostscript>=9.53.3
+tk
