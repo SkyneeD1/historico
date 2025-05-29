@@ -1,2 +1,0 @@
-ghostscript
-libglib2.0-0
