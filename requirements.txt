@@ -1,0 +1,6 @@
+streamlit
+pandas
+PyMuPDF
+camelot-py[cv]
+ghostscript
+opencv-python-headless
