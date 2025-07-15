@@ -1,6 +1,4 @@
 streamlit
-pandas
-PyMuPDF
+pymupdf
 camelot-py[cv]
-ghostscript
-opencv-python-headless
+pandas
