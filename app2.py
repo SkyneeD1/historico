@@ -9,6 +9,12 @@ import tempfile
 st.set_page_config(page_title="📑 Extrator de Histórico Salarial", layout="wide")
 st.title("📑 Extrator de Histórico Salarial - Daniel Tominaga")
 
+# 🔥 Campo para nome do arquivo
+nome_arquivo = st.text_input("📄 Nome do Arquivo (sem extensão):", value="")
+
+# Concatenando 'HS - ' com o nome inserido
+nome_arquivo_final = f"HS - {nome_arquivo}"
+
 # 🔥 Seleção do tipo de extração
 tipo_extracao = st.selectbox(
     "Selecione o tipo de histórico salarial:",
@@ -117,7 +123,7 @@ if tipo_extracao != "Selecione..." and uploaded_file and paginas_input:
             st.download_button(
                 label="📥 Baixar CSV Organizado",
                 data=csv,
-                file_name="historico_organizado.csv",
+                file_name=f"{nome_arquivo_final} .csv",
                 mime='text/csv'
             )
 
@@ -205,7 +211,7 @@ if tipo_extracao != "Selecione..." and uploaded_file and paginas_input:
                 st.download_button(
                     label="📥 Baixar CSV Organizado",
                     data=csv,
-                    file_name="historico_organizado.csv",
+                    file_name=f"{nome_arquivo_final}.csv",
                     mime='text/csv'
                 )
 
