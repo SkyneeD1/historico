@@ -7,7 +7,7 @@ import tempfile
 
 
 st.set_page_config(page_title="📑 Extrator de Histórico Salarial", layout="wide")
-st.title("📑 Extrator de Histórico Salarial - Daniel Tominaga")
+st.title("📑 Extrator de Histórico Salarial ")
 
 # 🔥 Campo para nome do arquivo
 nome_arquivo = st.text_input("📄 Nome do Arquivo (sem extensão):", value="")
@@ -217,3 +217,4 @@ if tipo_extracao != "Selecione..." and uploaded_file and paginas_input:
 
             except Exception as e:
                 st.error(f"❌ Erro: {e}")
+
